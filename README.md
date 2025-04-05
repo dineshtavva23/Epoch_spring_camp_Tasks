@@ -2,7 +2,7 @@
 
 ## Overview
 
-This task involves creating a **kaleidoscope effect** using image processing techniques with Python and OpenCV. Two versions of the effect were implemented:
+This task involves creating a **kaleidoscope effect** using image processing techniques with Python,Matplot and OpenCV. Two versions of the effect were implemented:
 
 1. **Grayscale Kaleidoscope**
 2. **RGB Kaleidoscope**
