@@ -1,11 +1,7 @@
 
-# 🍎🍌🍊 KNN Classifier from Scratch (Using NumPy)
+#  KNN Classifier from Scratch (Using NumPy)
 
-This is a simple Python project where we build a **K-Nearest Neighbors (KNN)** classifier using only **NumPy**. No external machine learning libraries are used.
-
----
-
-## 📚 What is KNN?
+This is a Python project where we build a **K-Nearest Neighbors (KNN)** classifier using only **NumPy**. No external machine learning libraries are used.
 
 **KNN** is a basic ML algorithm. It works like this:
 1. When you give a new point (like a fruit), it looks at the **k nearest points** in the training data.
@@ -14,13 +10,7 @@ This is a simple Python project where we build a **K-Nearest Neighbors (KNN)** c
 
 ---
 
-## 🧾 What’s in the Data?
-
-Each row in the data looks like this:
-
-```python
-[weight, size, color_code, label]
-```
+## Data
 
 - Example: `[150, 7.0, 1, 'Apple']`
 - We convert labels (`'Apple'`, `'Banana'`, `'Orange'`) into numbers:
@@ -30,7 +20,7 @@ Each row in the data looks like this:
 
 ---
 
-## 🔧 What the Code Does
+## Overview of code
 
 ### 1. **Prepares the data**
 - Encodes labels to numbers
@@ -38,8 +28,6 @@ Each row in the data looks like this:
 
 ### 2. **Defines distance functions**
 - **Euclidean**: straight-line distance
-- **Manhattan**: like grid or city-block distance
-- **Minkowski**: general form (we used `p=4`)
 
 ### 3. **Builds the KNN classifier**
 - Finds the `k` closest neighbors for each test point
@@ -58,64 +46,9 @@ Each row in the data looks like this:
 - Scales features between 0 and 1 to make things fair
 
 ---
-
-## 🧪 Example Predictions
-
-With test data like:
-
-```python
-[118, 6.2, 0]  → Banana  
-[160, 7.3, 1]  → Apple  
-[185, 7.7, 2]  → Orange
-```
-
-The model predicts:
-```bash
-Predictions: [1 0 2]
-Converted Predictions: ['Banana', 'Apple', 'Orange']
-```
-
-It works great for all tested `k` values!
-
----
-
-## 📈 Accuracy
-
 We also test how accurate the model is by splitting the data:
 - 75% for training
 - 25% for testing
 
 Then we calculate how many labels were predicted correctly.
 
----
-
-## 🛠 How to Run
-
-Make sure you have Python and NumPy installed. Then just run:
-
-```bash
-python knn_classifier.py
-```
-
----
-
-## ✅ Requirements
-
-Just one library:
-```bash
-pip install numpy
-```
-
----
-
-## 📌 Future Ideas
-
-- Add weighted KNN (closer neighbors get more vote)
-- Add support for real-world datasets
-- Use k-fold validation
-
----
-
-## ✌️ Final Note
-
-This project is perfect for beginners who want to **understand how KNN works** from the ground up!
